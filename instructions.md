@@ -77,11 +77,13 @@ These instructions will guide you through setting up this project in Roblox Stud
 ## Enhanced Features
 
 ### Maps
-You now have **4 different maps** to play on:
+You now have **6 different maps** to play on:
 - **Arena**: Classic open arena with pillars for cover
 - **Corridors**: Tight network of intersecting hallways  
 - **The Maze**: Grid-based map with complex navigation
 - **Warehouse**: Large industrial space with dynamic crate cover
+- **Castle**: Medieval fortress with towers, courtyard, and throne room
+- **Prison**: Maximum security facility with cell blocks and guard towers
 
 ### Weapons
 Choose from **9 different weapons**:

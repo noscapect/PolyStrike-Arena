@@ -20,6 +20,24 @@ This document outlines the major enhancements made to the original PolyStrike Ar
   - Industrial lighting effects (neon ceiling lights)
   - 200x200 arena with metal walls and concrete floor
 
+### Castle
+- **Description**: A medieval fortress with towers, courtyard, and throne room
+- **Features**:
+  - 12 strategic spawn points across towers and courtyard
+  - Four corner towers with high ground advantage
+  - Central keep with throne room interior
+  - Drawbridge entrance and moat for tactical positioning
+  - 200x200 arena with stone walls and medieval architecture
+
+### Prison
+- **Description**: A maximum security facility with cell blocks and guard towers
+- **Features**:
+  - 15 spawn points across yard and building interiors
+  - Exercise yard with basketball hoop and weight bench
+  - Cell block with narrow corridors and cell doors
+  - Guard towers with searchlights and security cameras
+  - 250x250 arena with concrete walls and industrial barriers
+
 ## Expanded Weapon Arsenal
 
 ### New Weapons Added:

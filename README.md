@@ -21,11 +21,13 @@ This is a fast-paced, modern arcade shooter created for Roblox, inspired by clas
 *   **Advanced Scoring:** Real-time leaderboard with damage-based scoring.
 *   **Power-Up System:** 6 different power-ups with visual effects and strategic value.
 
-### 🗺️ **Maps (4 Total)**
+### 🗺️ **Maps (6 Total)**
 *   **Arena:** A classic open arena with pillars for cover.
 *   **Corridors:** A tight network of intersecting hallways.
 *   **The Maze:** A grid-based map with complex navigation and ambush opportunities.
 *   **Warehouse:** A large industrial space filled with dynamic crate cover and atmospheric lighting.
+*   **Castle:** A medieval fortress with towers, courtyard, and throne room - featuring strategic high ground and narrow passages.
+*   **Prison:** A maximum security facility with cell blocks, guard towers, and exercise yard - offering tactical cover and vertical gameplay.
 
 ### 🔫 **Weapons (9 Total)**
 *   **Pistol:** Standard sidearm with balanced stats.
@@ -191,7 +193,7 @@ This project includes comprehensive documentation:
 ## 🎮 **Complete Feature Set**
 
 ### **Core Gameplay**
-- 4 immersive maps with physics and particle effects
+- 6 immersive maps with physics and particle effects
 - 9 diverse weapons with unique characteristics
 - 7 enemy types with advanced AI behaviors
 - 6 power-ups with visual effects
