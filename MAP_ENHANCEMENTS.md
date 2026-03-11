@@ -149,3 +149,25 @@ All four maps have been enhanced with:
 - Weather effects (rain, snow) with appropriate particles
 
 This enhancement system creates a rich, interactive environment that responds to player actions and enhances the overall first-person shooter experience.
+
+## Lobby System Integration
+
+### Enhanced Lobby Environment
+- **Physics-Enabled Objects**: Interactive lobby elements that react to player movement
+- **Atmospheric Effects**: Lobby-specific particle systems for enhanced ambiance
+- **Environmental Feedback**: Visual reactions to player interactions in lobby
+- **Dynamic Lighting**: Lobby lighting that complements the main game areas
+
+### Lobby Physics Features
+- **Interactive Decor**: Objects in lobby that can be moved or destroyed
+- **Environmental Reactions**: Particle effects when players interact with lobby elements
+- **Atmospheric Particles**: Lobby-specific fog, dust, and lighting effects
+- **Force Reactions**: Objects receive realistic physics forces on interaction
+
+### Seamless Transitions
+- **Environment Consistency**: Physics and effects maintain consistency between lobby and maps
+- **Performance Optimization**: Efficient resource management across all areas
+- **Visual Continuity**: Cohesive visual style across lobby and game environments
+- **Audio Integration**: Sound effects synchronized with lobby physics interactions
+
+This lobby integration ensures that the enhanced physics and particle effects system provides a complete, immersive experience from the moment players enter the game through the entire gameplay cycle.

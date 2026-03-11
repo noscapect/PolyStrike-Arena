@@ -212,6 +212,14 @@ This project includes comprehensive documentation:
 - Professional shop interface
 - Secure server-side validation
 
+### **Lobby System**
+- **Social Hub:** Player interaction and preparation area
+- **Optional Participation:** Players choose whether to join rounds
+- **Spectator Mode:** Watch rounds from elevated viewing platform
+- **Real-time Updates:** Live player status and economy data
+- **Integrated Shop:** Seamless access to in-game purchases
+- **Professional Interface:** Clean, intuitive lobby UI
+
 ### **Technical Excellence**
 - Progressive difficulty system
 - Advanced AI with team mechanics

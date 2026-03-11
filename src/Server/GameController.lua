@@ -7,6 +7,7 @@ local VoteManager = require(script.Parent.VoteManager)
 local EnemyController = require(script.Parent.EnemyController)
 local ScoreManager = require(script.Parent.ScoreManager)
 local PowerUpController = require(script.Parent.PowerUpController)
+local LobbyManager = require(script.Parent.LobbyManager)
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
@@ -45,6 +46,13 @@ end
 function GameController.start()
     coroutine.wrap(function()
         while true do
+            -- Lobby Phase - Players can interact, shop, spectate
+            LobbyManager.setRoundActive(false)
+            LobbyManager.clearLobby() -- Move all players to lobby
+            
+            -- Wait for players to join round or start voting
+            wait(5) -- Brief pause for lobby setup
+            
             -- Voting Phase
             local mapOptions = LevelManager.getLevels()
             local winningMapName = VoteManager.startVote(mapOptions)
@@ -58,9 +66,25 @@ function GameController.start()
             end
             
             ScoreManager.resetScores()
-            teleportPlayers(loadedMap.SpawnPoints)
+            
+            -- Teleport active players to map, keep lobby players in lobby
+            local activePlayers = {}
+            for userId, playerData in pairs(LobbyManager.inGamePlayers) do
+                table.insert(activePlayers, playerData.player)
+            end
+            
+            -- If no players joined, still run the round for spectators
+            if #activePlayers > 0 then
+                for i, player in ipairs(activePlayers) do
+                    if player.Character then
+                        local spawnPoint = loadedMap.SpawnPoints[((i-1) % #loadedMap.SpawnPoints) + 1]
+                        player.Character:SetPrimaryPartCFrame(CFrame.new(spawnPoint))
+                    end
+                end
+            end
 
             -- Round Phase
+            LobbyManager.setRoundActive(true)
             local roundEndTime = tick() + ROUND_DURATION
             local spawnTimer = 0
             local scoreUpdateTimer = 0
@@ -124,6 +148,7 @@ function GameController.start()
             -- Intermission
             cleanupEnemies()
             cleanupPowerUps()
+            LobbyManager.setRoundActive(false)
             wait(INTERMISSION_DURATION)
         end
     end)()

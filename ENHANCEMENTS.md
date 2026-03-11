@@ -226,3 +226,49 @@ Create these sound objects in `ReplicatedStorage/Sounds/`:
 - **Reward System**: High scores and kill streaks provide satisfaction
 
 This enhanced version of PolyStrike Arena provides a much richer and more engaging first-person shooter experience with modern game design principles and extensive customization options.
+
+## Lobby System Implementation
+
+### Comprehensive Lobby Features:
+- **Social Hub**: Players can interact, view leaderboards, and access the shop
+- **Optional Participation**: Players choose whether to join rounds or stay in lobby
+- **Spectator Mode**: Watch active rounds from a designated viewing platform
+- **Real-time Updates**: Live player status, round progress, and economy data
+- **Persistent Economy**: Currency and inventory persist between rounds
+
+### Player States & Actions:
+- **In Lobby**: Default state for all players with social interaction
+- **Spectating**: Watching round from elevated viewing platform
+- **In-Game**: Actively participating in combat
+- **Round Complete**: Returns to lobby after round ends
+
+### Key Actions:
+- **Join Round**: Enter active combat (L key or Join Round button)
+- **Spectate**: Watch from viewing platform (Spectate button)
+- **Shop Access**: Browse and purchase items (Shop button or B key)
+- **Leave Lobby**: Return to lobby from any state (Leave Lobby button)
+- **Toggle Lobby**: Quick access with L key
+
+### Technical Implementation:
+- **LobbyManager.lua**: Server-side lobby management with player state tracking
+- **LobbyController.lua**: Client-side professional lobby interface
+- **Integrated Environment**: 100x100 unit lobby area with viewing platform
+- **Seamless Integration**: Works perfectly with existing game systems
+
+### Lobby Environment:
+- **Spacious Layout**: 100x100 unit interaction area
+- **Transparent Walls**: 80% transparency for visibility
+- **Viewing Platform**: 40x40 unit elevated area at (0, 10, -30)
+- **Safe Zone**: No combat or hazards in lobby area
+- **Professional UI**: Clean, intuitive interface with real-time updates
+
+### Game Flow Integration:
+1. **Lobby Phase**: Players interact, shop, prepare (5 seconds)
+2. **Voting Phase**: Map selection with lobby participation
+3. **Round Start**: Active players teleport to map
+4. **Spectator Mode**: Lobby players can watch from platform
+5. **Round Progress**: 2-minute combat with live updates
+6. **Round End**: All players return to lobby
+7. **Intermission**: 20-second break before next cycle
+
+This lobby system transforms PolyStrike Arena from a simple shooter into a comprehensive social gaming experience, providing players with meaningful activities before, during, and after each round while maintaining the fast-paced action that defines the game.

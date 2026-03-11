@@ -277,3 +277,25 @@ end)
 - **Achievement Displays:** Showcase rare items and accomplishments
 
 This monetization system provides a robust, fair, and engaging economy that enhances player experience while maintaining game balance and preventing pay-to-win scenarios.
+
+## Lobby System Integration
+
+### Seamless Shop Access
+- **Direct Integration**: Shop opens directly from lobby interface
+- **Real-time Balance**: Currency updates reflect purchases instantly
+- **Inventory Display**: Owned items shown in lobby for customization
+- **Persistent Progress**: Shop progress maintained between rounds
+
+### Enhanced Player Experience
+- **Social Shopping**: Browse items while interacting with other players
+- **Strategic Planning**: Preview items before entering combat
+- **Reward Visibility**: See earned currency and progress in lobby
+- **Easy Access**: Simple controls for all shop functions
+
+### Lobby Economy Features
+- **Live Updates**: Real-time currency and purchase history
+- **Item Previews**: Visual previews of all available cosmetics
+- **Progress Tracking**: View economy progress and achievements
+- **Social Sharing**: Show off purchased items to other players
+
+This lobby integration transforms the shop from a standalone feature into a core part of the social gaming experience, encouraging engagement and providing multiple touchpoints for monetization.

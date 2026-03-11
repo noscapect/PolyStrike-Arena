@@ -122,3 +122,47 @@ Collect **6 different power-ups**:
 - **Visual Effects**: Particle effects for all actions and power-ups
 
 You should now have a fully-featured modern first-person shooter with extensive customization options and engaging gameplay!
+
+## Lobby System Features
+
+### Social Hub
+- **Player Interaction**: Chat and interact with other players before rounds
+- **Shop Access**: Browse and purchase cosmetic items from the in-game shop
+- **Leaderboard Viewing**: Check current scores and previous round winners
+- **Preparation Area**: Get ready and strategize before joining combat
+
+### Optional Participation
+- **Choose Your Role**: Decide whether to join the round or stay in the lobby
+- **Spectator Mode**: Watch active rounds from an elevated viewing platform
+- **Flexible Participation**: Join or leave rounds at your own pace
+- **Safe Environment**: No pressure to participate every round
+
+### Key Controls
+- **L Key**: Toggle lobby access
+- **B Key**: Open/close the shop interface
+- **Join Round Button**: Enter active combat
+- **Spectate Button**: Watch the current round
+- **Leave Lobby Button**: Return to lobby from any state
+
+### Lobby Environment
+- **Spacious Layout**: 100x100 unit interaction area
+- **Viewing Platform**: Elevated 40x40 unit area for spectating
+- **Transparent Walls**: 80% transparency for visibility
+- **Professional UI**: Clean, intuitive interface with real-time updates
+
+### Game Flow
+1. **Lobby Phase**: Interact, shop, and prepare (5 seconds)
+2. **Voting Phase**: Participate in map selection
+3. **Round Start**: Active players teleport to the selected map
+4. **Spectator Mode**: Watch from the viewing platform
+5. **Round Progress**: 2-minute combat with live updates
+6. **Round End**: All players return to lobby
+7. **Intermission**: 20-second break before next cycle
+
+### Economy Integration
+- **Persistent Currency**: Credits and inventory persist between rounds
+- **Real-time Updates**: Live balance and purchase history
+- **Seamless Shopping**: Shop access directly from lobby interface
+- **Progress Tracking**: View economy progress and achievements
+
+This lobby system transforms PolyStrike Arena into a comprehensive social gaming experience, providing meaningful activities before, during, and after each round while maintaining the fast-paced action that defines the game!
