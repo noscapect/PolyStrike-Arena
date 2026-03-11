@@ -29,7 +29,7 @@ These instructions will guide you through setting up this project in Roblox Stud
     *   Create a **ModuleScript** named `VoteManager`. Copy the contents of `src/Server/VoteManager.lua` into it.
     *   Create a **ModuleScript** named `ScoreManager`. Copy the contents of `src/Server/ScoreManager.lua` into it.
     *   Create a **ModuleScript** named `MonetizationManager`. Copy the contents of `src/Server/MonetizationManager.lua` into it.
-    *   Create a **ModuleScript** named `PowerUpManager`. Copy the contents of `src/Server/PowerUpManager.lua` into it.
+    *   Create a **ModuleScript** named `PowerUpController`. Copy the contents of `src/Server/PowerUpController.lua` into it.
 
     **Client Scripts (in `StarterPlayer` > `StarterPlayerScripts`):**
 
@@ -59,10 +59,66 @@ These instructions will guide you through setting up this project in Roblox Stud
 5.  **Add Sounds**
 
     *   In the **Explorer** window, create a new **Folder** in `ReplicatedStorage` and name it `Sounds`.
-    *   Inside the `Sounds` folder, create three **Sound** objects. Name them `Shoot`, `Reload`, and `EnemyHit`.
+    *   Inside the `Sounds` folder, create **nine** **Sound** objects. Name them:
+      - `Shoot`
+      - `Reload`
+      - `EnemyHit`
+      - `PlayerHit`
+      - `Explosion`
+      - `PowerUp`
+      - `MenuSelect`
+      - `RoundStart`
+      - `RoundEnd`
     *   For each **Sound** object, you will need to provide a **SoundId**. You can find sound effects on the Roblox Creator Marketplace or upload your own.
 
 6.  **Run the Game**
     *   Once all the scripts and sounds are in place, click the **Play** button (or press F5) to start the game.
 
-You should now have a working first-person shooter where you can shoot at enemies that chase you!
+## Enhanced Features
+
+### Maps
+You now have **4 different maps** to play on:
+- **Arena**: Classic open arena with pillars for cover
+- **Corridors**: Tight network of intersecting hallways  
+- **The Maze**: Grid-based map with complex navigation
+- **Warehouse**: Large industrial space with dynamic crate cover
+
+### Weapons
+Choose from **9 different weapons**:
+- **Pistol**: Standard sidearm
+- **Shotgun**: Close-range spread damage
+- **Rocket Launcher**: Explosive area damage
+- **Assault Rifle**: Balanced automatic weapon
+- **Sniper Rifle**: Long-range precision
+- **Submachine Gun**: Fast-firing close combat
+- **Light Machine Gun**: High-capacity sustained fire
+- **Crossbow**: High-damage piercing shots
+- **Plasma Rifle**: Energy weapon with charged shots
+
+### Enemies
+Face **7 different enemy types** with unique behaviors:
+- **Melee Zombie**: Basic charging enemy
+- **Ranged Shooter**: Projectile-firing enemy
+- **Dodger**: Fast strafing enemy
+- **Tank**: Heavy enemy with charge attacks
+- **Kamikaze**: Explosive suicide units
+- **Healer**: Support units that heal allies
+- **Sniper**: Long-range precision enemies
+
+### Power-Ups
+Collect **6 different power-ups**:
+- **Medkit**: Instant health restoration
+- **Speed Boost**: Temporary movement speed increase
+- **Damage Amplifier**: Temporary damage increase
+- **Health Pack**: Instant 50 HP heal
+- **Ammo Pack**: Refill current weapon clip
+- **Shield**: Damage reduction and protection
+
+### Game Features
+- **Dynamic Difficulty**: Enemy variety increases throughout rounds
+- **Progressive Spawning**: More challenging enemies appear over time
+- **Enhanced UI**: Dynamic crosshair, color-coded health/ammo displays
+- **Advanced Audio**: 3D positional sound effects
+- **Visual Effects**: Particle effects for all actions and power-ups
+
+You should now have a fully-featured modern first-person shooter with extensive customization options and engaging gameplay!

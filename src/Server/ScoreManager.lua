@@ -1,8 +1,9 @@
 --!strict
 -- ScoreManager.lua
--- Manages player scores.
+-- Manages player scores and integrates with the economy system.
 
 local Players = game:GetService("Players")
+local EconomyManager = require(script.Parent.EconomyManager)
 
 local ScoreManager = {}
 
@@ -23,6 +24,12 @@ end
 function ScoreManager.addScore(player, amount)
     if scores[player.UserId] then
         scores[player.UserId] += amount
+        
+        -- Award money for damage dealt (1 credit per 10 damage)
+        local moneyAwarded = math.floor(amount / 10)
+        if moneyAwarded > 0 then
+            EconomyManager.addMoney(player, moneyAwarded)
+        end
     end
 end
 

@@ -18,6 +18,8 @@ soundsFolder.Parent = ReplicatedStorage
 -- Move level modules to ReplicatedStorage
 ServerScriptService:WaitForChild("Corridors"):Clone().Parent = levelsFolder
 ServerScriptService:WaitForChild("Arena"):Clone().Parent = levelsFolder
+ServerScriptService:WaitForChild("TheMaze"):Clone().Parent = levelsFolder
+ServerScriptService:WaitForChild("Warehouse"):Clone().Parent = levelsFolder
 
 
 local shootEvent = ReplicatedStorage:WaitForChild("ShootEvent")
@@ -102,7 +104,7 @@ local function onShoot(player, cameraCFrame, weapon)
             else
                 local humanoid = otherPart.Parent:FindFirstChildOfClass("Humanoid")
                 if humanoid and otherPart.Parent:IsA("Model") and otherPart.Parent.Name == "Enemy" then
-                    humanoid:TakeDamage(25)
+                    humanoid:TakeDamage(weapon.Damage)
                     ScoreManager.addScore(player, 10)
                     clientSoundEvent:FireAllClients("EnemyHit")
                     if humanoid.Health <= 0 and MonetizationManager.ownsGamePass(player, "SpecialKillEffects") then
